@@ -207,3 +207,14 @@ let UpdateInterval = setInterval(()=>{
   up_quarks.innerText = stats.h_quarks_u;
   down_quarks.innerText = stats.h_quarks_d;
 }, 100)
+SavingSystem._new("stats", "{}")
+window.onunload = () => {
+  SavingSystem.save("stats", stats)
+}
+window.onload = () => {
+  let LoadedStats = SavingSystem.load("stats");
+  JSON.parse(LoadedStats) == {} ?
+  (stats.h_quarks_d_per_click = 1, stats.h_quarks_u_per_click = 1) :
+  console.log(LoadedStats)
+  
+}
