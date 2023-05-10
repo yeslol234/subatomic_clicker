@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" type="text/css" rel="stylesheet"/>
+    <title>Static Template</title>
+  </head>
+  <body>
+    <h1>Subatomic Clicker</h1>
+    <h2>Quarks</h2>
+    <button id="h_quark" quark="up" class="button"> Make a hypothetical quark </button> &nbsp;<button class="no_outline" id="quark_more">&gt;</button>
+    <div class="inline-div hidden" id="quark_more_options"><button id="up_quark_op">Up Quark</button>&nbsp;<button id="down_quark_op">Down quark</button></div>
+    <breakline></breakline> <!--basically just br, but using css!11!!1-->
+    <h2>Quark Stats</h2>
+    <div id="stats">
+      <p>Quarks Ovr. (overall): <span id="quarks_ovr"></span></p>
+      <p>Up Quarks: <span id="up_quarks"></span></p>
+      <p>Down Quarks: <span id="down_quarks"></span></p>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
